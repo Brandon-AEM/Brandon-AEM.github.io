@@ -146,7 +146,7 @@ p.p1 {
     background-color: #977048; /* Fondo */
     margin: 20px auto; /* Centrar horizontalmente */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
-    padding: 15px; /* Padding interno para que las imágenes no toquen los bordes */
+    padding: 15px 2%; /* Padding interno para que las imágenes no toquen los bordes */
     box-sizing: border-box;
 }
 
