@@ -1,0 +1,195 @@
+body {
+    font-family: 'Arial', sans-serif; /* Tipografía moderna */
+    background-image: url('Imagenes/Madera\ beige.jpg'); /* Ruta de la imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: #333; /* Texto en gris oscuro */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.7rem; /* Tamaño grande para el título principal */
+    margin: auto; /* Centrar el título */
+    margin-bottom: 20px; /* Espaciado inferior */
+    text-align: center; /* Centrar encabezados */
+    width: 35%; /* Ancho automático */
+    overflow: hidden; /* Esconde contenido adicional */
+    display: center; /* Centrar contenido */
+    color: #fffdfd; /* Texto en gris oscuro */
+    background-color: #0fcbe4; /* Color de fondo */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+    border-radius: 1cqmax; /* Bordes redondeados */
+}
+h2 {
+    color: #000000; /* Azul oscuro elegante */
+    text-align:left; /* Centrar encabezados */
+}
+p1 {
+    font-size: 1rem auto; /* Tamaño de fuente para párrafos */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin: 0px 5px; /* Espaciado automático */
+    text-align: center; /* Centrar texto */
+    background-color: #60ecffe5; /* Color de fondo */
+    box-shadow: #015201 0px 0px 5px; /* Sombra del texto */
+    box-sizing: auto; /* Incluye el padding y el borde en el ancho total */
+    border-radius: 0.5cqmax; /* Bordes redondeados */
+    padding:  10px; /* Espaciado interno */
+    color: #201f1f; /* Texto en gris medio */
+}    
+.header {
+    background-color: #202222; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    text-align: justify; /* Justificar texto */
+    font-size: 1.5rem; /* Tamaño de fuente */
+    color: #fff; /* Texto en blanco */
+    width: auto; /* Ancho automático */
+    height: 8cm; /* Altura */
+    border-radius: 0 0 14px 14px; /* Bordes redondeados en la parte inferior */
+}
+h2 {
+    font-size: 1.8rem; /* Tamaño más pequeño para subtítulos */
+    margin-left: 20px; /* Espaciado automático a la izquierda */
+}
+h3 {
+    font-size: 1.5rem; /* Tamaño más pequeño para subtítulos */
+    color: #1a1212; /* Texto en gris medio */
+    margin-left: 20px;  /* Espaciado automático a la izquierda */
+    margin-top: 20px; /* Espaciado superior */
+    margin-bottom: 1px; /* Espaciado inferior */
+}
+.banner p, .banner pb {
+    font-size: 1.2rem; /* Tamaño de fuente para el banner */
+    margin: 0;
+    padding: 0;
+    color: aliceblue; /* Color del texto */
+    transition: color 0.7s ease; /* Transición suave */
+    
+}
+.banner:hover p {
+    font-size: 1.5rem; /* Aumenta el tamaño del texto al pasar el mouse */
+    color: black; /* Cambia el color del texto al pasar el mouse */
+    transition: all color 0.7s ease; /* Transición suave */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+.banner:hover pb {
+    margin-left: 25px; /* Espaciado entre "Portafolio!" y "Trabajos realizados" */
+    font-size: 1.5rem; /* Aumenta el tamaño del texto al pasar el mouse */
+    color: rgb(177, 0, 0); /* Cambia el color del texto al pasar el mouse */
+    transition: all color 1.3s ease; /* Transición suave */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    
+}
+p2, p3 {
+    display: block; /* Asegura que los párrafos se muestren en bloque */
+    font-size: 1rem; /* Tamaño de fuente para párrafos */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin: 0px 5px; /* Espaciado automático */
+    box-sizing: border-box; 
+    border-radius: 0.8cqmax; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    color: #000000; /* Texto en gris medio */
+    background-color: #ffffff; /* Color de fondo */
+    
+}
+
+.banner {
+    position: fixed; /* Fijo en la parte superior */
+    top: 0; /* Fijo en la parte superior */
+    left: 10; /* Fijo a la izquierda */
+    width: 100%; /* Ancho automático */
+    height: 1.6cm; /* Altura inicial */
+    background-color: #015201; /* Color del banner */
+    display: flex; /* Flexbox para centrar contenido */
+    align-items: center; /* Centrar verticalmente */
+    font-size: 1.2rem; /* Tamaño de fuente */
+    transition: all 2.5s ease; /* Transición suave */
+    z-index: 100; /* Asegura que esté encima del contenido */
+    overflow: hidden; /* Esconde contenido adicional */
+    border-radius: 0 0 14px 14px; /* Bordes redondeados en la parte inferior */
+}
+.banner p {
+    margin-right: 0.5%; /* Espaciado entre "Portafolio!" y "Trabajos realizados" */
+    margin-left: 1%; /* Espaciado automático a la izquierda */
+    transition: all 1.8s ease; /* Transición suave */
+}
+
+.banner pb {
+    margin-left: 0.5%; /* Ajusta el margen izquierdo para separarlo */
+    transition: all 1.8s ease; /* Transición suave */
+}
+.banner:hover {
+    height: 150px; /* Altura al pasar el cursor */
+    font-size: 1.5rem; /* Aumenta el tamaño del texto */
+    
+
+    
+}
+body > *:not(.banner) {
+    margin-top: 60px; /* Ajusta este valor según la altura del banner */
+}
+.image-container {
+    display: flex;
+    width: 540px; /* Ancho del contenedor */
+    height: 180px; /* Altura del contenedor */
+    border-radius: 2.7cqmax; /* Bordes redondeados */
+    justify-content: center; /* Centrar las imágenes horizontalmente */
+    align-items: center; /* Centrar verticalmente si es necesario */
+    gap: 20px; /* Espaciado entre imágenes */
+    margin: 20px auto;
+}
+.image-container img {
+    width: 145px;
+    height: 145px;
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+    border-radius: 15px;
+    transition: transform 0.5s ease; /* Suaviza la rotación */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    border-color: #3498db; /* Cambiar color del borde al pasar el mouse */
+    border: 2.3px solid transparent; /* Borde transparente por defecto */
+}
+.image-container img.active {
+    transform: scale(1.5); /* Aumenta el tamaño de la imagen activa */
+    z-index: 1; /* Asegura que esté encima de las demás */
+}
+.image-container img:hover {
+    transform: scale(1.14); /* Aumenta el tamaño al pasar el cursor */
+    z-index: 2; /* Asegura que esté encima de las demás */
+    border-color: #e40303ef; /* Cambiar color del borde al pasar el mouse */
+}
+.image-slider {
+    display: flex;
+    justify-content: center; /* Centrar las imágenes horizontalmente */
+    align-items: center; /* Centrar verticalmente si es necesario */
+    gap: 20px; /* Espaciado entre imágenes */
+    width: 535px; /* Ancho del contenedor */
+    height: 187px; /* Altura del contenedor */
+    border-radius: 2.7cqmax; /* Bordes redondeados */
+    background-color: #977048; /* Fondo */
+    margin: 20px auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+.image-slider img {
+    width: 145px;
+    height: 145px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.5s ease; /* Suaviza la rotación */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    border-color: #3498db; /* Cambiar color del borde al pasar el mouse */
+    border: 2.3px solid transparent; /* Borde transparente por defecto */
+    
+}
+.image-slider img.active {
+    transform: scale(1.5); /* Aumenta el tamaño de la imagen activa */
+    z-index: 1; /* Asegura que esté encima de las demás */
+        
+}
+
+.image-slider img:hover {
+    transform: scale(1.14); /* Aumenta el tamaño al pasar el cursor */
+    z-index: 2; /* Asegura que esté encima de las demás */
+    border-color: #3498db; /* Cambiar color del borde al pasar el mouse */
+    
+}
