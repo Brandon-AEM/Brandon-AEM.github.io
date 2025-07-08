@@ -113,7 +113,7 @@ h3 {
 }
 
 /* Estilos para los párrafos con clases */
-p.p1, p.p2, p.p3 { /* Selecciona las etiquetas <p> con estas clases */
+p.p2, p.p3 { /* Selecciona las etiquetas <p> con estas clases */
     display: block; /* Asegura que los párrafos se muestren en bloque */
     font-size: 1rem; /* Tamaño de fuente para párrafos */
     line-height: 1.6; /* Espaciado entre líneas */
@@ -131,10 +131,19 @@ p.p1 {
     box-shadow: #015201 0px 0px 5px; /* Sombra del texto */
     text-align: center; /* Centrar texto */
     color: #201f1f; /* Texto en gris medio */
+    display: block; /* Asegura que los párrafos se muestren en bloque */
+    font-size: 1rem; /* Tamaño de fuente para párrafos */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin: 10px 35% auto; /* Margen lateral en porcentaje para responsividad */
+    box-sizing: border-box; 
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    color: #000000; /* Texto en gris medio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 /* Contenedores de imágenes */
-.image-slider, .image-container {
+.image-slider {
     display: flex;
     flex-wrap: wrap; /* Permite que las imágenes se envuelvan en filas en pantallas pequeñas */
     justify-content: center; /* Centrar las imágenes horizontalmente */
@@ -146,10 +155,24 @@ p.p1 {
     background-color: #977048; /* Fondo */
     margin: 20px auto; /* Centrar horizontalmente */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
-    padding: 15px 2%; /* Padding interno para que las imágenes no toquen los bordes */
+    padding: 15px; /* Padding interno para que las imágenes no toquen los bordes */
     box-sizing: border-box;
 }
-
+.image-container{
+    display: flex; 
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en filas en pantallas pequeñas */
+    justify-content: center; /* Centrar las imágenes horizontalmente */
+    align-items: center; /* Centrar verticalmente si es necesario */
+    gap: 5px; /* Espaciado entre imágenes */
+    width: fit-content; /* Ajusta el ancho al contenido */
+    max-width: none; /* Elimina el ancho máximo */
+    border-radius: 20px; /* Bordes redondeados */
+    background-color: #f7bc81; /* Fondo */
+    margin: 20px auto; /* Centrar horizontalmente */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+    padding: 15px 2%; /* Padding superior/inferior 15px, laterales 5px */
+    box-sizing: border-box;
+}
 .image-slider img, .image-container img {
     width: 120px; /* Tamaño de imagen base para móvil */
     height: 120px; /* Tamaño de imagen base para móvil */
