@@ -1,195 +1,254 @@
 body {
     font-family: 'Arial', sans-serif; /* Tipografía moderna */
-    background-image: url('Imagenes/Madera\ beige.jpg'); /* Ruta de la imagen */
+    background-image: url('Imagenes/Madera beige.jpg'); /* Ruta de la imagen */
     background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     color: #333; /* Texto en gris oscuro */
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Evita el scroll horizontal */
 }
 
-h1 {
-    font-size: 2.7rem; /* Tamaño grande para el título principal */
-    margin: auto; /* Centrar el título */
-    margin-bottom: 20px; /* Espaciado inferior */
-    text-align: center; /* Centrar encabezados */
-    width: 35%; /* Ancho automático */
+/* Estilos para el banner fijo superior */
+.banner {
+    position: fixed; /* Fijo en la parte superior */
+    top: 0; /* Fijo en la parte superior */
+    left: 0; /* Fijo a la izquierda (corregido de 10) */
+    width: 100%; /* Ancho completo */
+    height: 60px; /* Altura inicial fija para el banner */
+    background-color: #015201; /* Color del banner */
+    display: flex; /* Flexbox para centrar contenido */
+    justify-content: flex-start; /* Alinea al inicio */
+    align-items: center; /* Centrar verticalmente */
+    font-size: 1.2rem; /* Tamaño de fuente */
+    transition: all 0.5s ease; /* Transición suave y más rápida */
+    z-index: 100; /* Asegura que esté encima del contenido */
     overflow: hidden; /* Esconde contenido adicional */
-    display: center; /* Centrar contenido */
-    color: #fffdfd; /* Texto en gris oscuro */
-    background-color: #0fcbe4; /* Color de fondo */
-    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
-    border-radius: 1cqmax; /* Bordes redondeados */
-}
-h2 {
-    color: #000000; /* Azul oscuro elegante */
-    text-align:left; /* Centrar encabezados */
-}
-p1 {
-    font-size: 1rem auto; /* Tamaño de fuente para párrafos */
-    line-height: 1.6; /* Espaciado entre líneas */
-    margin: 0px 5px; /* Espaciado automático */
-    text-align: center; /* Centrar texto */
-    background-color: #60ecffe5; /* Color de fondo */
-    box-shadow: #015201 0px 0px 5px; /* Sombra del texto */
-    box-sizing: auto; /* Incluye el padding y el borde en el ancho total */
-    border-radius: 0.5cqmax; /* Bordes redondeados */
-    padding:  10px; /* Espaciado interno */
-    color: #201f1f; /* Texto en gris medio */
-}    
-.header {
-    background-color: #202222; /* Color de fondo */
-    padding: 20px; /* Espaciado interno */
-    text-align: justify; /* Justificar texto */
-    font-size: 1.5rem; /* Tamaño de fuente */
-    color: #fff; /* Texto en blanco */
-    width: auto; /* Ancho automático */
-    height: 8cm; /* Altura */
     border-radius: 0 0 14px 14px; /* Bordes redondeados en la parte inferior */
+    padding-left: 1%; /* Espaciado a la izquierda del banner */
+    box-sizing: border-box; /* Incluye padding en el ancho total */
 }
-h2 {
-    font-size: 1.8rem; /* Tamaño más pequeño para subtítulos */
-    margin-left: 20px; /* Espaciado automático a la izquierda */
-}
-h3 {
-    font-size: 1.5rem; /* Tamaño más pequeño para subtítulos */
-    color: #1a1212; /* Texto en gris medio */
-    margin-left: 20px;  /* Espaciado automático a la izquierda */
-    margin-top: 20px; /* Espaciado superior */
-    margin-bottom: 1px; /* Espaciado inferior */
-}
-.banner p, .banner pb {
+
+.banner p, .banner .pb-text { /* Selecciona la nueva clase para "Trabajos realizados" */
     font-size: 1.2rem; /* Tamaño de fuente para el banner */
     margin: 0;
     padding: 0;
     color: aliceblue; /* Color del texto */
-    transition: color 0.7s ease; /* Transición suave */
-    
-}
-.banner:hover p {
-    font-size: 1.5rem; /* Aumenta el tamaño del texto al pasar el mouse */
-    color: black; /* Cambia el color del texto al pasar el mouse */
-    transition: all color 0.7s ease; /* Transición suave */
-    cursor: pointer; /* Cambia el cursor al pasar el mouse */
-}
-.banner:hover pb {
-    margin-left: 25px; /* Espaciado entre "Portafolio!" y "Trabajos realizados" */
-    font-size: 1.5rem; /* Aumenta el tamaño del texto al pasar el mouse */
-    color: rgb(177, 0, 0); /* Cambia el color del texto al pasar el mouse */
-    transition: all color 1.3s ease; /* Transición suave */
-    cursor: pointer; /* Cambia el cursor al pasar el mouse */
-    
-}
-p2, p3 {
-    display: block; /* Asegura que los párrafos se muestren en bloque */
-    font-size: 1rem; /* Tamaño de fuente para párrafos */
-    line-height: 1.6; /* Espaciado entre líneas */
-    margin: 0px 5px; /* Espaciado automático */
-    box-sizing: border-box; 
-    border-radius: 0.8cqmax; /* Bordes redondeados */
-    padding: 10px; /* Espaciado interno */
-    color: #000000; /* Texto en gris medio */
-    background-color: #ffffff; /* Color de fondo */
-    
+    transition: color 0.7s ease, font-size 0.7s ease, margin-left 0.7s ease; /* Transición suave */
 }
 
-.banner {
-    position: fixed; /* Fijo en la parte superior */
-    top: 0; /* Fijo en la parte superior */
-    left: 10; /* Fijo a la izquierda */
-    width: 100%; /* Ancho automático */
-    height: 1.6cm; /* Altura inicial */
-    background-color: #015201; /* Color del banner */
-    display: flex; /* Flexbox para centrar contenido */
-    align-items: center; /* Centrar verticalmente */
-    font-size: 1.2rem; /* Tamaño de fuente */
-    transition: all 2.5s ease; /* Transición suave */
-    z-index: 100; /* Asegura que esté encima del contenido */
-    overflow: hidden; /* Esconde contenido adicional */
-    border-radius: 0 0 14px 14px; /* Bordes redondeados en la parte inferior */
-}
 .banner p {
     margin-right: 0.5%; /* Espaciado entre "Portafolio!" y "Trabajos realizados" */
     margin-left: 1%; /* Espaciado automático a la izquierda */
-    transition: all 1.8s ease; /* Transición suave */
 }
 
-.banner pb {
+.banner .pb-text { /* Estilos para la nueva clase */
     margin-left: 0.5%; /* Ajusta el margen izquierdo para separarlo */
-    transition: all 1.8s ease; /* Transición suave */
 }
-.banner:hover {
-    height: 150px; /* Altura al pasar el cursor */
-    font-size: 1.5rem; /* Aumenta el tamaño del texto */
-    
 
-    
+.banner:hover {
+    height: 100px; /* Altura al pasar el cursor (reducida para mejor responsividad) */
+    font-size: 1.5rem; /* Aumenta el tamaño del texto */
 }
+
+.banner:hover p {
+    font-size: 1.5rem; /* Aumenta el tamaño del texto al pasar el mouse */
+    color: black; /* Cambia el color del texto al pasar el mouse */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+.banner:hover .pb-text {
+    margin-left: 25px; /* Espaciado entre "Portafolio!" y "Trabajos realizados" */
+    font-size: 1.5rem; /* Aumenta el tamaño del texto al pasar el mouse */
+    color: rgb(177, 0, 0); /* Cambia el color del texto al pasar el mouse */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+/* Ajuste para que el contenido no quede debajo del banner fijo */
 body > *:not(.banner) {
-    margin-top: 60px; /* Ajusta este valor según la altura del banner */
+    margin-top: 70px; /* Ajusta este valor según la altura máxima del banner en hover */
 }
-.image-container {
+
+/* Estilos para el encabezado principal */
+.header {
+    background-color: #202222; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar texto */
+    font-size: 1.5rem; /* Tamaño de fuente */
+    color: #fff; /* Texto en blanco */
+    width: 90%; /* Ancho relativo */
+    max-width: 800px; /* Ancho máximo para pantallas grandes */
+    margin: 20px auto; /* Centrar horizontalmente */
+    border-radius: 14px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+h1 {
+    font-size: 2.2rem; /* Tamaño grande para el título principal */
+    margin: 0 auto 15px auto; /* Centrar y espaciado inferior */
+    text-align: center; /* Centrar encabezados */
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    color: #fffdfd; /* Texto en gris oscuro */
+    background-color: #0fcbe4; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #000000; /* Azul oscuro elegante */
+    text-align: left; /* Alinear a la izquierda */
+    font-size: 1.8rem; /* Tamaño más pequeño para subtítulos */
+    margin-left: 20px; /* Espaciado a la izquierda */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+h3 {
+    font-size: 1.5rem; /* Tamaño más pequeño para subtítulos */
+    color: #1a1212; /* Texto en gris medio */
+    margin-left: 20px;  /* Espaciado a la izquierda */
+    margin-top: 20px; /* Espaciado superior */
+    margin-bottom: 1px; /* Espaciado inferior */
+}
+
+/* Estilos para los párrafos con clases */
+p.p1, p.p2, p.p3 { /* Selecciona las etiquetas <p> con estas clases */
+    display: block; /* Asegura que los párrafos se muestren en bloque */
+    font-size: 1rem; /* Tamaño de fuente para párrafos */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin: 10px 5%; /* Margen lateral en porcentaje para responsividad */
+    box-sizing: border-box; 
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    color: #000000; /* Texto en gris medio */
+    background-color: #ffffff; /* Color de fondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+p.p1 {
+    background-color: #60ecffe5; /* Color de fondo específico para p1 */
+    box-shadow: #015201 0px 0px 5px; /* Sombra del texto */
+    text-align: center; /* Centrar texto */
+    color: #201f1f; /* Texto en gris medio */
+}
+
+/* Contenedores de imágenes */
+.image-slider, .image-container {
     display: flex;
-    width: 540px; /* Ancho del contenedor */
-    height: 180px; /* Altura del contenedor */
-    border-radius: 2.7cqmax; /* Bordes redondeados */
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en filas en pantallas pequeñas */
     justify-content: center; /* Centrar las imágenes horizontalmente */
     align-items: center; /* Centrar verticalmente si es necesario */
-    gap: 20px; /* Espaciado entre imágenes */
-    margin: 20px auto;
+    gap: 15px; /* Espaciado entre imágenes (reducido para móvil) */
+    width: 90%; /* Ancho relativo */
+    max-width: 600px; /* Ancho máximo para pantallas grandes */
+    border-radius: 20px; /* Bordes redondeados */
+    background-color: #977048; /* Fondo */
+    margin: 20px auto; /* Centrar horizontalmente */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+    padding: 15px; /* Padding interno para que las imágenes no toquen los bordes */
+    box-sizing: border-box;
 }
-.image-container img {
-    width: 145px;
-    height: 145px;
+
+.image-slider img, .image-container img {
+    width: 120px; /* Tamaño de imagen base para móvil */
+    height: 120px; /* Tamaño de imagen base para móvil */
     object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
     border-radius: 15px;
-    transition: transform 0.5s ease; /* Suaviza la rotación */
+    transition: transform 0.5s ease, border-color 0.5s ease; /* Suaviza la rotación y cambio de borde */
     cursor: pointer; /* Cambia el cursor al pasar el mouse */
-    border-color: #3498db; /* Cambiar color del borde al pasar el mouse */
     border: 2.3px solid transparent; /* Borde transparente por defecto */
+    flex-shrink: 0; /* Evita que las imágenes se encojan más allá de su tamaño base */
 }
-.image-container img.active {
-    transform: scale(1.5); /* Aumenta el tamaño de la imagen activa */
+
+.image-slider img.active, .image-container img.active {
+    transform: scale(1.3); /* Aumenta el tamaño de la imagen activa (reducido para móvil) */
     z-index: 1; /* Asegura que esté encima de las demás */
 }
-.image-container img:hover {
-    transform: scale(1.14); /* Aumenta el tamaño al pasar el cursor */
+
+.image-slider img:hover, .image-container img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el cursor (reducido para móvil) */
     z-index: 2; /* Asegura que esté encima de las demás */
     border-color: #e40303ef; /* Cambiar color del borde al pasar el mouse */
 }
-.image-slider {
-    display: flex;
-    justify-content: center; /* Centrar las imágenes horizontalmente */
-    align-items: center; /* Centrar verticalmente si es necesario */
-    gap: 20px; /* Espaciado entre imágenes */
-    width: 535px; /* Ancho del contenedor */
-    height: 187px; /* Altura del contenedor */
-    border-radius: 2.7cqmax; /* Bordes redondeados */
-    background-color: #977048; /* Fondo */
-    margin: 20px auto;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
-}
-.image-slider img {
-    width: 145px;
-    height: 145px;
-    object-fit: cover;
-    border-radius: 15px;
-    transition: transform 0.5s ease; /* Suaviza la rotación */
-    cursor: pointer; /* Cambia el cursor al pasar el mouse */
-    border-color: #3498db; /* Cambiar color del borde al pasar el mouse */
-    border: 2.3px solid transparent; /* Borde transparente por defecto */
-    
-}
-.image-slider img.active {
-    transform: scale(1.5); /* Aumenta el tamaño de la imagen activa */
-    z-index: 1; /* Asegura que esté encima de las demás */
-        
+
+/* Media Queries para responsividad */
+
+/* Para pantallas más pequeñas (móviles) */
+@media screen and (max-width: 768px) {
+    .banner {
+        height: 50px; /* Menor altura para el banner en móvil */
+        font-size: 1rem;
+    }
+    .banner p, .banner .pb-text {
+        font-size: 1rem;
+    }
+    .banner:hover {
+        height: 80px; /* Menor altura en hover para móvil */
+    }
+    .banner:hover p, .banner:hover .pb-text {
+        font-size: 1.2rem;
+    }
+    body > *:not(.banner) {
+        margin-top: 60px; /* Ajusta el margen superior para el contenido */
+    }
+
+    .header {
+        width: 95%; /* Ocupa más ancho en móvil */
+        padding: 15px;
+    }
+    h1 {
+        font-size: 1.8rem; /* Tamaño de fuente más pequeño para h1 en móvil */
+        padding: 8px;
+    }
+    h2, h3 {
+        margin-left: 10px; /* Menor margen a la izquierda en móvil */
+        font-size: 1.4rem;
+    }
+    p.p1, p.p2, p.p3 {
+        margin: 10px 2%; /* Márgenes laterales más pequeños en móvil */
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+
+    .image-slider, .image-container {
+        width: 95%; /* Ocupa más ancho en móvil */
+        max-width: none; /* Elimina el max-width para que se ajuste completamente */
+        gap: 10px; /* Menor espacio entre imágenes en móvil */
+        padding: 10px;
+    }
+    .image-slider img, .image-container img {
+        width: 90px; /* Imágenes más pequeñas en móvil */
+        height: 90px;
+    }
+    .image-slider img.active, .image-container img.active {
+        transform: scale(1.2); /* Menor aumento en activo para móvil */
+    }
+    .image-slider img:hover, .image-container img:hover {
+        transform: scale(1.05); /* Menor aumento en hover para móvil */
+    }
 }
 
-.image-slider img:hover {
-    transform: scale(1.14); /* Aumenta el tamaño al pasar el cursor */
-    z-index: 2; /* Asegura que esté encima de las demás */
-    border-color: #3498db; /* Cambiar color del borde al pasar el mouse */
-    
+/* Para pantallas muy pequeñas (ej. iPhone SE) */
+@media screen and (max-width: 480px) {
+    .banner p, .banner .pb-text {
+        font-size: 0.9rem;
+    }
+    .banner:hover p, .banner:hover .pb-text {
+        font-size: 1.1rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2, h3 {
+        font-size: 1.2rem;
+    }
+    p.p1, p.p2, p.p3 {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+    .image-slider img, .image-container img {
+        width: 70px; /* Imágenes aún más pequeñas en pantallas muy pequeñas */
+        height: 70px;
+    }
 }
