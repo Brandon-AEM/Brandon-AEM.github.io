@@ -238,7 +238,7 @@ p.p1 {
         width: 95%; /* Ocupa más ancho en móvil */
         max-width: none; /* Elimina el max-width para que se ajuste completamente */
         gap: 10px; /* Menor espacio entre imágenes en móvil */
-        padding: 10px;
+        padding: 10px 3%; /* Padding interno para que las imágenes no toquen los bordes */
     }
     .image-slider img, .image-container img {
         width: 90px; /* Imágenes más pequeñas en móvil */
